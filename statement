@@ -1,0 +1,13 @@
+public class name{
+    public static void main(string[] args){
+        int kumar=4;
+        int dinesh=20;
+        {
+            System.out.println("kumar is major");
+        }
+        else{
+            System.out.println("dinesh is major");
+        }
+        }
+    })
+}

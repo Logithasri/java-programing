@@ -1,0 +1,204 @@
+
+\\class Main {
+    public static void main(String[] args) {
+    String a="New world";
+    String y="Hello world";
+    String x="Hello world / java";
+    System.out.println("Hello".matches(x));
+    System.out.println("world".matches(x));
+    System.out.println("Javascript".matches(x));
+    System.out.println(y.regionMatches(7,a,4,5));
+    }
+}
+    
+false
+false
+false
+false
+
+=== Code Execution Successful ===
+\\
+class Main {
+    public static void main(String[] args) {
+    String x="hello";
+    String y="Hello logi hello";
+ 
+    System.out.println(x.replace('l','p'));
+    String a="(?i) hello";
+     System.out.println(y.replaceAll(a,"hi"));
+    String b="hello";
+      System.out.println(y.replaceFirst(b,"hi"));
+    }
+}
+
+heppo
+Hello logihi
+Hello logi hi
+
+=== Code Execution Successful ===
+class Main {
+    public static void main(String[] args) {
+    String x="LOGI DINESH";
+    String y="[,\\.\\s]";
+
+    String[] z=x.split(y);
+     for (String s:z){
+      System.out.println(s);
+    }
+}
+}
+
+
+LOGI
+DINESH
+
+=== Code Execution Successful ===
+
+\\
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter string:");
+        String x=sc.nextLine();
+        
+        String y="[,\\.\\s]";
+     
+        
+        
+        String[] z=x.split(y);
+       for(String s:z){
+         System.out.println(s);
+    }
+}
+} 
+           
+enter string:
+logi dinesh
+logi
+dinesh
+
+=== Code Execution Successful ===
+
+\\
+
+class Main {
+    public static void main(String[] args) {
+       String x="Hello";
+       System.out.println(x.startsWith("Hello"));
+       System.out.println(x.startsWith("Hii"));
+    }
+}
+
+       true
+false
+
+=== Code Execution Successful ===
+\\
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("enter string:");
+        String x = sc.nextLine();
+
+        String regex = "[,\\.\\s]"; 
+        String[] z = x.split(regex);
+
+       
+        for (String s : z) {
+            System.out.println(s);
+        }
+
+       
+        String concatenated = String.join("", z);
+        System.out.println("Concatenated: " + concatenated);
+    }
+}
+
+enter string:
+logi dinesh
+logi
+dinesh
+Concatenated: logidinesh
+
+=== Code Execution Successful ===
+\\
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        String x ="spiderman";
+
+        
+        String sub=x.substring(0,6);
+        String sub1=x.substring(6);
+        System.out.println(sub+" "+sub1);
+    }
+}
+
+spider man
+
+=== Code Execution Successful ===
+\\
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         
+        String x = "logithasri";
+        char[] y = x.toCharArray();
+        
+       
+        for (char ch : y) {
+            System.out.println(ch);
+        }
+
+     
+        String sub = x.substring(0, 7);
+        String sub1 = x.substring(7);
+        System.out.println(sub + " " + sub1);
+    }
+}
+
+l
+o
+g
+i
+t
+h
+a
+s
+r
+i
+logitha sri
+
+=== Code Execution Successful ===
+\\
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         
+        String x ="  logithasri   ";
+       System.out.println(x);
+       System.out.println(x.trim());
+        System.out.println(String. valueOf(x));
+    }
+}
+logithasri   
+logithasri
+  logithasri   
+
+=== Code Execution Successful ===
+
+
+
+

@@ -1,0 +1,33 @@
+**where the focus writing step by step function this made it harder to manage reuse code in large scale 
+** java is built around oops which helps in organizing code is using class and object
+
+FUTURE OF OOPS CONCEPT
+*structures code into logic unit(class &object)
+*it keeps relested data together(encapsulation)
+*it makes code modulue ,reusable scalble(inheritance)
+*it prevents unauthorized access to te data
+*it follows  DRY(dont repeat yourself)
+
+TYPES
+object
+encapsulation
+polymorphism
+inheritance
+abstraction
+class
+
+*CLASS:
+class is a userdefined blueprint or prototype from which objects or created it represents the set of properties or  methods are common to all objects of contact
+using class you can create multiple objects within the same behaviour instead of writing a code multiple times
+                                     EG:
+                                      *modifiers= a class can be publicor havedefault access
+                                      *class name= should be begin with initial letter capatalize
+                                       *body= body should surrounded by braces
+
+*OBJECT:
+object is a basic unit of oops the represents entities at difficulty java programming it creates many objects which has you know intract by methods  the objects are what perform your  code 
+they are part of visibles to the user represents by attributes of an object it also reflect property of the object 
+*state : represents by attributes of an object it also reflect property of the object 
+*behaviour : represent by method of a object it also reflect it response of an object to another object 
+*identity : it is a unique name given to an object the unables to intract with other object
+*method : a method collection of statement a perform some specific task and return the result to the caller 

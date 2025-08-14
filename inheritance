@@ -1,0 +1,327 @@
+inheritance is a fundamental concept of oops . it is a mechanism in java by which one class is allows to inherit the future (fields and methoda) of another class 
+inheritance means creating new classes based on exitsting ones a class inherited  from another class can reuse the methods and  fields of that class 
+
+class cars:
+.      .      .
+.      .      .
+.      .      .
+BMW     Audi   Benz
+
+
+\\
+
+
+class cars{
+    void sound(){
+        System.out.println("cars makes a sound");
+        
+    }
+}
+
+
+class BMW extends cars{
+    void sound(){
+        System.out.println("bmw");
+    }
+}
+class Aadi extends cars{
+    void sound(){
+        System.out.println("Aadi");
+    }
+}
+class benz extends cars{
+    void sound(){
+        System.out.println("benz");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        
+    cars a;
+    
+    a=new BMW();
+    a.sound();
+    
+    a=new Aadi();
+    a.sound();
+    
+    a=new benz();
+    a.sound();
+    
+    
+        
+    }
+}
+
+
+bmw
+Aadi
+benz
+
+=== Code Execution Successful ===
+\\
+
+import java.util.Scanner;
+
+class family {
+    void sound() {
+        System.out.println("members name");
+    }
+}
+
+class father extends family {
+    String name;
+    father(String name) {
+        this.name = name;
+    }
+    void sound() {
+        System.out.println(name);
+    }
+}
+
+class mother extends family {
+    String name;
+    mother(String name) {
+        this.name = name;
+    }
+    void sound() {
+        System.out.println(name);
+    }
+}
+
+class sister extends family {
+    String name;
+    sister(String name) {
+        this.name = name;
+    }
+    void sound() {
+        System.out.println(name);
+    }
+}
+
+class husband extends family {
+    String name;
+    husband(String name) {
+        this.name = name;
+    }
+    void sound() {
+        System.out.println(name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter father's name: ");
+        String fatherName = sc.nextLine();
+
+        System.out.print("Enter mother's name: ");
+        String motherName = sc.nextLine();
+
+        System.out.print("Enter sister's name: ");
+        String sisterName = sc.nextLine();
+
+        System.out.print("Enter husband's name: ");
+        String husbandName = sc.nextLine();
+
+        family a;
+
+        a = new father(fatherName);
+        a.sound();
+
+        a = new mother(motherName);
+        a.sound();
+
+        a = new sister(sisterName);
+        a.sound();
+
+        a = new husband(husbandName);
+        a.sound();
+    }
+}
+
+Enter father's name: ponnaiah
+Enter mother's name: revathi
+Enter sister's name: krishikasri
+Enter husband's name: dineshkumar
+ponnaiah
+revathi
+krishikasri
+dineshkumar
+
+=== Code Execution Successful ===
+
+how inheritance works in java?
+the extends keyword is used for inheritance in java it enables the subclass to inherit  the fields and methods of the super class(parent class).
+when a class extends another class it means it inherits all the non primitive members of the parent class subclass can also override or add new functionality to that.
+
+
+    1.single : in single inheritance a sub class is derived from only one parent class.it inherit the properties and behaviour of single parent class .it is also known as single inheritance
+  
+\\
+class cars{
+    void sound(){
+        System.out.println("cars makes a sound");
+        
+    }
+}
+
+
+class BMW extends cars{
+    void sound(){
+        System.out.println("bmw");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+    cars a;
+    
+    a=new BMW();
+    a.sound();
+    }
+}
+
+bmw
+
+=== Code Execution Successful ===
+
+ 2.multilevel: in multilevel inheritance is based on  derived class will be inheriting a base class and well as the derivedbclass act as a 
+ the base class for another classes
+
+                                   base 1   . .  . : vehicle:
+                                              .
+                                              .
+                                   base2       . . . : four wheeler:
+                                               .
+                                               .
+                             derived class     . . . . .  : car:
+
+
+import java.util.Scanner;
+
+class Vehicle {
+    Vehicle() {
+        System.out.println("vehicle");
+    }
+}
+
+class FourWheeler extends Vehicle {
+    FourWheeler() {
+        System.out.println("this is a fourwheeler");
+    }
+}
+
+class Cars extends FourWheeler {
+    Cars() {
+        System.out.println("this is aadi");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Cars obj = new Cars();
+
+      
+    }
+}
+
+vehicle
+this is a fourwheeler
+this is aadi
+
+=== Code Execution Successful ===
+\\
+
+import java.util.Scanner;
+
+class grandparents{
+    grandparents() {
+        System.out.println("thaatha");
+    }
+}
+
+class cousins extends grandparents{
+    cousins() {
+        System.out.println("cousin");
+    }
+}
+
+class  daughter  extends cousins{
+    daughter() {
+        System.out.println("this is logitha");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        daughter obj = new daughter();
+
+      
+    }
+}
+
+thaatha
+cousin
+this is logitha
+
+=== Code Execution Successful ==
+
+ 3.hierarichal: in hierarical inheritance more than one sub classes inheritance a single base class ex:
+ more than one derived class is created in single base class foe ex carses buses both are vehicles 
+ 
+\\
+
+ import java.util.Scanner;
+
+class Vehicle{
+    Vehicle() {
+        System.out.println("This is a Vehicle");
+    }
+}
+
+class Car extends Vehicle{
+    Car() {
+        System.out.println("This is a car");
+    }
+}
+
+class Bus extends Vehicle {
+    Bus(){
+        System.out.println("This is a bus");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Car obj1 = new Car();
+        Bus obj2=new Bus();
+      
+    }
+}
+This is a Vehicle
+This is a car
+This is a Vehicle
+This is a bus
+
+=== Code Execution Successful ===
+   4.multiple : in multiple inheritance can have more than one super class an inherit features all super class 
+   
+    5.hybrid
+
+
+
+
+
+    
+
+
+
+
+

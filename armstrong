@@ -1,0 +1,25 @@
+import.java.util.io*;
+public class main{
+public static void main(string[]args){
+Scanner sc=newScanner(System.in);
+int num=sc.nextInt();
+int count=0;
+int temp=num;
+while(num>0){
+count++;
+num=num/10;
+}
+num=temp;
+int sum=0;
+while(num>0){
+int r=num%10;
+sum=sum+(int) math.pow(r,count);
+num=num/10;
+}
+if(temp==sum){
+System.out.println("Amstrong");
+}
+else{
+System.out.porintln(" not Amstrong");
+}
+}

@@ -1,0 +1,97 @@
+OBJECT AND CLASS EXAMPLE: MAIN WITHIN CLASS
+
+  class student{
+  int id;
+  String name;
+  public static void main(string args[]){
+    student s1=new student();
+    system.out.println(s1.id);
+      system.out.println(s1.name);
+  }
+}
+
+\\\\outside class
+  class student{
+  int id;
+  String name;
+}
+class TestStudent1
+{
+  public static void main(string args[])
+  {
+    student s1=new student();
+    system.out.println(s1.id);
+      system.out.println(s1.name);
+  }
+}
+data structures
+  
+\\\\\\ 
+  class student{
+  int reg;
+  string name;
+  void assign(intr,string n){
+    reg=r;
+    name=n;
+  void print(){
+    system.out.println(reg+" "+name);
+  }
+}
+public calss main{
+  public static void main(string[]args){
+    student m1=new student();
+    m1.assign (101,"dinesh");
+    student m2=new student();
+    m2.assign(102,"kumar");
+    m1.print();
+    m2.print();
+  }
+}
+
+    **CONSTRUCTOR:
+    * to initialize the object
+    * constructor is invoked at the time of object creation
+    * it constructs the value i.e.provide data for the object that is why it is known as constructor
+
+**RULES FOR CREATING JAVA CONSTRUCTOR
+* constructor name must be same as its class name
+* consttructor must have no explicit return type
+
+  **TYPES OF JAVA CONSTRUCTOR
+      * default
+      * parameterized 
+
+  \\\\\\\\ default constructor:
+      A constructor that have no parameter is known as default copnstructor class bike 
+    {
+      Bike()
+      {
+        System.out.println("Bike is created");
+      }
+      public static void main(string[]args){
+        bike b=new bike();
+      }
+    } O/P: Bike is created
+
+      \\\\\\\\ POLYMORPHISM
+      * polymorphism means many forms
+
+      Achieved in two ways
+      * copmpile time polymorphism method overloading
+      * runtime polymorphism method overriding
+
+      \\\\\\method overriding:
+      if subclass has the same method as declared in the parent class it is known as method overriding in java 
+
+      \\\\\ Abstraction:
+      it is a process of hiding the implementation details and showing only functionality to the user
+      abstraction lets you focus on what the object does instead of how it does it
+
+      \\\\\\encapsulation:
+      it is a process of wrapping  code and data together into a single unit
+      it provide you the control over the data
+
+      
+
+      
+     

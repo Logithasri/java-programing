@@ -340,7 +340,7 @@ class singlylinkedlist{
       head=tail=newnode;
     }
     else{
-      newnode.next=head;
+      newnode.next=head; 
        head=newnode;
     }
     
@@ -395,10 +395,16 @@ public class Main {
     }
 }
 
-\\\\\\\
+\\\\\\\ singly linked list:
 https://onlinegdb.com/vZGIerloL \\\add
 https://onlinegdb.com/KASK-Htlm \\\del
 https://onlinegdb.com/6BnIFbxBB\\\del at beg      
 https://onlinegdb.com/Ntju9Nt5p  \\\\overall delete pos
-\\\\\
+
+\\\\\ doubly linked list:
+https://onlinegdb.com/oh2hFDTjH \\\ dele portion
+https://onlinegdb.com/GvZOLio3f \\\\del at pos
+https://onlinegdb.com/s21s_-wL3 \\\\updation
+
+
 
